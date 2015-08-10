@@ -1,0 +1,8 @@
+#!/bin/sh -eux
+
+mkdir -p $HOME/src
+ghq get git@github.com:mbadolato/iTerm2-Color-Schemes.git
+
+# anyenv
+ghq get git@github.com:riywo/anyenv.git
+ln -s $HOME/src/github.com/riywo/anyenv $HOME/.anyenv

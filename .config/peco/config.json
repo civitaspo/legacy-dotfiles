@@ -1,0 +1,8 @@
+{
+  "Keymap": {
+  },
+  "Style": {
+    "Selected": ["underline", "on_green", "black"],
+    "Query": ["red", "underline"]
+  }
+}

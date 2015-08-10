@@ -1,0 +1,65 @@
+[{
+  "type": "url",
+  "icon": "mark-github",
+  "url": "https://github.com",
+  "tooltip": "Github Page",
+  "iconset": ""
+},{
+  "type": "spacer"
+}, {
+  "type": "button",
+  "icon": "document",
+  "callback": "application:new-file",
+  "tooltip": "New File",
+  "iconset": "ion"
+}, {
+  "type": "button",
+  "icon": "file",
+  "callback": "application:add-project-folder",
+  "tooltip": "Open Folder",
+  "iconset": "fa"
+}, {
+  "type": "button",
+  "icon": "floppy-o",
+  "callback": "core:save",
+  "tooltip": "Save File",
+  "iconset": "fa"
+}, {
+  "type": "spacer"
+}, {
+  "type": "button",
+  "icon": "markdown",
+  "callback": "markdown-preview:toggle",
+  "tooltip": "markdown-preview",
+  "iconset": ""
+} ,{
+  "type": "button",
+  "icon": "html5",
+  "callback": "atom-html-preview:toggle",
+  "tooltip": "html-preview",
+  "iconset": "fa"
+},{
+  "type": "spacer"
+},{
+    "type": "button",
+    "icon": "columns",
+    "tooltip": "V Split Pane",
+    "iconset": "fa",
+    "callback": ["pane:split-right"]
+  } ,{
+  "type": "spacer"
+}, {
+  "type": "button",
+  "icon": "search",
+  "callback": "command-palette:toggle",
+  "tooltip": "Command Palette",
+  "iconset": "fa"
+},{
+  "type": "spacer"
+}, {
+  "type": "button",
+  "icon": "settings",
+  "callback": "application:show-settings",
+  "tooltip": "Setting",
+  "iconset": ""
+}]

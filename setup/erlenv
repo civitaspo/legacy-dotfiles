@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh -eu
+
+echo "see: http://qiita.com/nownabe/items/67a27ddd23652676ffee"
+
+cd /tmp
+wget http://www.erlang.org/download/otp_src_18.0.tar.gz
+tar zxf otp_src_18.0.tar.gz
+cd otp_src_18.0
+./configure --prefix=$HOME/.anyenv/envs/erlenv/releases/18.0
+make -j 4
+make install
+erlenv global 18.0
+erlenv rehash
+cd ..
+rm -rf otp_src_18.0 otp_src_18.0.tar.gz

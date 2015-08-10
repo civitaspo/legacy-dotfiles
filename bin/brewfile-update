@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+brew file pull
+brew file dump -y
+brew file push

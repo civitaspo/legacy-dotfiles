@@ -1,0 +1,12 @@
+#!/bin/sh -eux
+
+ln -fs $HOME/dotfiles/bin $HOME/
+ln -fs $HOME/dotfiles/.zshrc $HOME/
+ln -fs $HOME/dotfiles/.vimrc $HOME/
+ln -fs $HOME/dotfiles/.pryrc $HOME/
+ln -fs $HOME/dotfiles/.tmux.conf $HOME/
+ln -fs $HOME/dotfiles/.gitconfig $HOME/
+ln -fs $HOME/dotfiles/.gitignore_global $HOME/
+ln -fs $HOME/dotfiles/.git_template $HOME/
+ln -fs $HOME/dotfiles/.config $HOME/
+ln -fs $HOME/dotfiles/.config/atom/* $HOME/.atom/

@@ -1,0 +1,27 @@
+# This is Git's per-user configuration file.
+[core]
+	user = Civitaspo
+	email = civitaspo@gmail.com
+	excludesfile = ~/.gitignore_global
+	pager = less
+	autocrlf = false
+[push]
+	# push only the current branch
+	default = tracking
+[user]
+	name = Civitaspo
+	email = civitaspo@gmail.com
+[color]
+	ui = auto
+[ghq]
+	root = ~/src
+[branch]
+	autosetuprebase = always
+[merge]
+	# from 1.7.6
+	ff = false
+[pull]
+	# from 1.7.9
+	rebase = true
+[init]
+	templatedir = ~/.git_template

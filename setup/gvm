@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# see: http://gvmtool.net/
+# see: http://qiita.com/vvakame/items/83366fbfa47562fafbf4
+# see: http://qiita.com/ftsan/items/536a6a83135b8856600a
+curl -s get.gvmtool.net | bash

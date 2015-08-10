@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+
+HTOP=$(which htop)
+chmod 6555 $HTOP
+sudo chown root: $HTOP

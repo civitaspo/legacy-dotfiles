@@ -1,0 +1,24 @@
+#!/usr/bin/env zsh
+
+anyenv install Renv --skip-existing
+anyenv install crenv --skip-existing
+anyenv install denv --skip-existing
+anyenv install erlenv --skip-existing
+anyenv install exenv --skip-existing
+anyenv install goenv --skip-existing
+anyenv install hsenv --skip-existing
+anyenv install jenv --skip-existing
+anyenv install luaenv --skip-existing
+anyenv install ndenv --skip-existing
+anyenv install nenv --skip-existing
+anyenv install nodenv --skip-existing
+anyenv install phpenv --skip-existing
+anyenv install plenv --skip-existing
+anyenv install pyenv --skip-existing
+anyenv install rbenv --skip-existing
+anyenv install sbtenv --skip-existing
+anyenv install scalaenv --skip-existing
+
+jenv add $(/usr/libexec/java_home -v 1.8)
+jenv add $(/usr/libexec/java_home -v 1.7)
+

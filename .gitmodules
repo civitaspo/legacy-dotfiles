@@ -1,0 +1,9 @@
+[submodule ".config/peco/plugins/cool-peco"]
+	path = .config/peco/plugins/cool-peco
+	url = git@github.com:ryoppy/cool-peco.git
+[submodule ".config/zsh/plugins/zsh-vcs-prompt"]
+	path = .config/zsh/plugins/zsh-vcs-prompt
+	url = git@github.com:yonchu/zsh-vcs-prompt.git
+[submodule ".config/vim/plugins/neobundle.vim"]
+	path = .config/vim/plugins/neobundle.vim
+	url = git@github.com:Shougo/neobundle.vim.git

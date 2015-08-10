@@ -1,0 +1,51 @@
+"*":
+  "exception-reporting":
+    userId: "46624571-cfeb-ac14-a1cb-369144d1c6d1"
+  welcome:
+    showOnStartup: false
+  core:
+    disabledPackages: [
+      "wrap-guide"
+      "markdown-toc"
+    ]
+  editor:
+    invisibles: {}
+    softWrap: true
+    autoIndentOnPaste: false
+    fontFamily: "Hermit"
+    fontSize: 15
+  "highlight-column":
+    opacity: 0.3
+  "highlight-line":
+    enableUnderline: true
+    hideHighlightOnSelect: true
+    enableBackgroundColor: false
+  "autocomplete-plus":
+    confirmCompletion: "enter"
+  "block-cursor":
+    secondaryColor:
+      red: 57
+      green: 57
+      blue: 57
+      alpha: 1
+    blinkInterval: 0
+  "git-history": {}
+  "git-blame": {}
+  "merge-conflicts": {}
+  rulerz:
+    width: 2
+  "one-dark-ui":
+    layoutMode: "Compact"
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "tool-bar":
+    position: "Left"
+  "flex-tool-bar":
+    toolBarConfigurationFilePath: "/Users/takahiro.nakayama/.atom/toolbar.json"
+  "file-icons": {}
+  "git-projects":
+    sortBy: "Latest modification date"
+  "markdown-preview": {}
+  "spell-check": {}
+  tabs: {}
+  "atom-fuzzy-grep": {}
