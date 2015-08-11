@@ -116,25 +116,25 @@ eval "$(anyenv init -)"
 _JAVA_VERSION=$(jenv version | cut -d' ' -f1)
 export JAVA_HOME=$(/usr/libexec/java_home -v ${_JAVA_VERSION})
 
-# cool-peco
-# 最近anyframeでもいいような気がしている。。。
+# anyframe
 # cf. http://sssslide.com/www.slideshare.net/mollifier/anyframe-47698822
+# cf. http://qiita.com/mollifier/items/81b18c012d7841ab33c3
+if [ -e $HOME/.config/peco/plugins/anyframe ]; then
+  fpath=($HOME/.config/peco/plugins/anyframe(N-/) $fpath)
+
+  autoload -Uz anyframe-init
+  anyframe-init
+
+  bindkey '^g' anyframe-widget-cd-ghq-repository
+  bindkey '^f' anyframe-widget-insert-filename
+  bindkey '^r' anyframe-widget-put-history
+fi
+
+# TODO: integrate to anyframe
 source $HOME/.config/peco/plugins/cool-peco/cool-peco
-### cool-peco-filename-search
-zle -N cool-peco-filename-search
-bindkey '^f' cool-peco-filename-search
-
-### cool-peco-ghq
-zle -N cool-peco-ghq
-bindkey '^g' cool-peco-ghq
-
-### cool-peco-history
-alias cph=cool-peco-history
-zle -N cool-peco-history
-bindkey '^r' cool-peco-history
-
 ### cool-peco-ssh
-alias s=cool-peco-ssh
+zle -N cool-peco-ssh
+bindkey '^s' cool-peco-ssh
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
