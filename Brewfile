@@ -24,6 +24,7 @@ cask virtualbox
 ## caskroom/fonts
 tap caskroom/fonts
 cask font-hermit
+cask font-ubuntu
 
 ## caskroom/versions
 tap caskroom/versions
