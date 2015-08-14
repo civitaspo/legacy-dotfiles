@@ -36,6 +36,7 @@ brew brew-file
 # Other Homebrew packages
 brew ant
 brew autoconf
+brew awscli
 brew bdw-gc
 brew cmake
 brew colordiff
@@ -47,6 +48,7 @@ brew gist
 brew git
 brew htop-osx
 brew jpeg
+brew jq
 brew libevent
 brew libpng
 brew libtiff
@@ -60,6 +62,7 @@ brew pkg-config
 brew pstree
 brew readline
 brew reattach-to-user-namespace
+brew s3cmd
 brew the_silver_searcher
 brew tig
 brew tmux
