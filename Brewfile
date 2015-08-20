@@ -39,9 +39,11 @@ brew ant
 brew autoconf
 brew awscli
 brew bdw-gc
+brew boot2docker
 brew cmake
 brew colordiff
 brew curl --with-openssl
+brew docker
 brew fop
 brew gdbm
 brew ghq
