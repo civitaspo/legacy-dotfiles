@@ -8,12 +8,17 @@
       "wrap-guide"
       "markdown-toc"
     ]
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
   editor:
     invisibles: {}
     softWrap: true
     autoIndentOnPaste: false
-    fontFamily: "Hermit"
-    fontSize: 15
+    softTabs: false
+    showInvisibles: true
+    fontFamily: "Ubuntu mono"
   "highlight-column":
     opacity: 0.3
   "highlight-line":
@@ -49,3 +54,9 @@
   "spell-check": {}
   tabs: {}
   "atom-fuzzy-grep": {}
+  "atom-material-ui":
+    accentColor: "Green"
+    compactTreeView: true
+    showTabIcons: "Show on active tab"
+    tabSize: "Small"
+    panelContrast: true

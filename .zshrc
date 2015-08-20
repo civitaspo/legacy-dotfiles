@@ -61,12 +61,6 @@ fi
 # ssh-add
 ssh-add
 
-# kerberos
-kinit -R
-if [ $? -ne 0 ]; then
-  kinit --renewable
-fi
-
 # setting SPROMPT
 setopt correct
 SPROMPT="%{$fg[red]%}%{$suggest%}(#꒪﹃꒪) ? < あん? これって %B%r%b %{$fg[red]%}じゃねーの? [いえす!(y), ちゃう!(n), きゃんせる!(a), しぇるに戻る!(e)]:${reset_color} "
@@ -88,12 +82,6 @@ fi
 
 # To activate the syntax highlighting, add the following at the end of your .zshrc:
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# brew-file
-# brew-wrap wraps the original brew command for an automatic update of Brewfile when you execute such a brew install or brew uninstall.
-if [ -f $(brew --prefix)/etc/brew-wrap ];then
-  source $(brew --prefix)/etc/brew-wrap
-fi
 
 # Add the following to your zshrc to access the online help:
 unalias run-help
