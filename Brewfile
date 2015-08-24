@@ -16,6 +16,7 @@ cask intellij-idea-ce
 cask iterm2
 cask java
 cask karabiner
+cask kindle
 cask limechat
 cask totalspaces
 cask vagrant
