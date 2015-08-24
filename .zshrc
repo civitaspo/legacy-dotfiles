@@ -53,6 +53,9 @@ source $HOME/.config/zsh/plugins/incr-0.2/incr.zsh
 # zsh vcs info more
 source $HOME/.config/zsh/plugins/zsh-vcs-prompt/zshrc.sh
 
+# zsh enhancd
+source $HOME/.config/zsh/plugins/enhancd/enhancd.sh
+
 # gvm
 if [ -e $HOME/.gvm/bin/gvm-init.sh ]; then
   source $HOME/.gvm/bin/gvm-init.sh
