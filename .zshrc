@@ -53,10 +53,6 @@ source $HOME/.config/zsh/plugins/incr-0.2/incr.zsh
 # zsh vcs info more
 source $HOME/.config/zsh/plugins/zsh-vcs-prompt/zshrc.sh
 
-# zsh enhancd
-# see: http://qiita.com/b4b4r07/items/2cf90da00a4c2c7b7e60
-source $HOME/.config/zsh/plugins/enhancd/enhancd.sh
-
 # ssh-add
 ssh-add
 
