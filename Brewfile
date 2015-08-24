@@ -46,6 +46,7 @@ brew colordiff
 brew curl --with-openssl
 brew docker
 brew fop
+brew gawk
 brew gdbm
 brew ghq
 brew gist
