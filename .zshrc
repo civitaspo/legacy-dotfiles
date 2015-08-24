@@ -54,12 +54,8 @@ source $HOME/.config/zsh/plugins/incr-0.2/incr.zsh
 source $HOME/.config/zsh/plugins/zsh-vcs-prompt/zshrc.sh
 
 # zsh enhancd
+# see: http://qiita.com/b4b4r07/items/2cf90da00a4c2c7b7e60
 source $HOME/.config/zsh/plugins/enhancd/enhancd.sh
-
-# gvm
-if [ -e $HOME/.gvm/bin/gvm-init.sh ]; then
-  source $HOME/.gvm/bin/gvm-init.sh
-fi
 
 # ssh-add
 ssh-add
