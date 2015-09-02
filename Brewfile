@@ -60,6 +60,7 @@ brew libtiff
 brew lua
 brew maven
 brew mercurial
+brew mysql
 brew openssl
 brew pcre
 brew peco
@@ -68,6 +69,7 @@ brew pstree
 brew readline
 brew reattach-to-user-namespace
 brew s3cmd
+brew socat
 brew the_silver_searcher
 brew tig
 brew tmux
