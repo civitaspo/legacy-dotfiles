@@ -12,7 +12,7 @@ cask clipy
 cask flux
 cask google-chrome
 cask google-japanese-ime
-cask intellij-idea-ce
+cask intellij-idea
 cask iterm2
 cask java
 cask karabiner
