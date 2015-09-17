@@ -2,7 +2,7 @@
 
 XHOME=$(dirname $0)
 
-$XHOME/git-module
+$XHOME/git-submodule
 $XHOME/homebrew
 $XHOME/symlink
 $HOME/ghq
