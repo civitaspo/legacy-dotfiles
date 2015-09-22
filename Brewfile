@@ -93,6 +93,7 @@ appstore iMovie
 appstore Keynote
 appstore LINE
 appstore Memory Monitor
+appstore MindNode
 appstore Numbers
 appstore Pages
 appstore PopClip
