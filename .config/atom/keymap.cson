@@ -33,3 +33,6 @@
   'ctrl-alt-s': 'symbols-tree-view:toggle'
 'atom-workspace atom-text-editor':
   'ctrl-alt-h': 'git-history:show-file-history'
+'body':
+  'ctrl-t |': 'pane:split-left'
+  'ctrl-t -' : 'pane:split-down'

@@ -16,9 +16,8 @@
     invisibles: {}
     softWrap: true
     autoIndentOnPaste: false
-    softTabs: false
-    showInvisibles: true
     fontFamily: "Ubuntu mono"
+    fontSize: 17
   "highlight-column":
     opacity: 0.3
   "highlight-line":
