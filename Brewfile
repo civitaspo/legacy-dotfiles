@@ -43,7 +43,7 @@ brew bdw-gc
 brew boot2docker
 brew cmake
 brew colordiff
-brew curl --with-openssl
+brew curl --with-openssl --with-openssl
 brew docker
 brew fop
 brew gawk
@@ -85,6 +85,7 @@ brew zsh-completions
 brew zsh-syntax-highlighting
 
 # App Store applications
+appstore Dash
 appstore Display Menu
 appstore Evernote
 appstore GarageBand
@@ -97,6 +98,7 @@ appstore MindNode
 appstore Numbers
 appstore Pages
 appstore PopClip
+appstore Pushbullet
 appstore Slack
 appstore Steve
 appstore Sunrise Calendar
