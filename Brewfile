@@ -45,6 +45,7 @@ brew cmake
 brew colordiff
 brew curl --with-openssl --with-openssl
 brew docker
+brew embulk
 brew fop
 brew gawk
 brew gdbm
@@ -94,8 +95,8 @@ appstore iMovie
 appstore Keynote
 appstore LINE
 appstore Memory Monitor
-appstore MindNode
 appstore Numbers
+appstore OmniFocus
 appstore Pages
 appstore PopClip
 appstore Pushbullet
