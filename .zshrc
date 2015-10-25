@@ -110,7 +110,6 @@ if [ -e $HOME/.config/peco/plugins/anyframe ]; then
   anyframe-init
 
   bindkey '^g' anyframe-widget-cd-ghq-repository
-  bindkey '^f' anyframe-widget-insert-filename
   bindkey '^r' anyframe-widget-put-history
 fi
 

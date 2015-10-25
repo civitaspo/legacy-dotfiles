@@ -17,7 +17,7 @@
     softWrap: true
     autoIndentOnPaste: false
     fontFamily: "Ubuntu mono"
-    fontSize: 17
+    fontSize: 18
   "highlight-column":
     opacity: 0.3
   "highlight-line":
@@ -26,6 +26,7 @@
     enableBackgroundColor: false
   "autocomplete-plus":
     confirmCompletion: "enter"
+    minimumWordLength: 1
   "block-cursor":
     secondaryColor:
       red: 57
