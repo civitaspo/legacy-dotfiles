@@ -18,6 +18,7 @@ cask java
 cask karabiner
 cask kindle
 cask limechat
+cask omniplan
 cask totalspaces
 cask vagrant
 cask virtualbox
@@ -96,7 +97,6 @@ appstore Keynote
 appstore LINE
 appstore Memory Monitor
 appstore Numbers
-appstore OmniFocus
 appstore Pages
 appstore PopClip
 appstore Pushbullet
