@@ -46,6 +46,7 @@ brew cmake
 brew colordiff
 brew curl --with-openssl --with-openssl
 brew docker
+brew emacs --with-gnutls --with-cocoa
 brew embulk
 brew fop
 brew gawk
@@ -53,16 +54,21 @@ brew gdbm
 brew ghq
 brew gist
 brew git
+brew gmp
+brew gnutls
+brew hadoop
 brew htop-osx
 brew jpeg
 brew jq
 brew libevent
 brew libpng
+brew libtasn1
 brew libtiff
 brew lua
 brew maven
 brew mercurial
 brew mysql
+brew nettle
 brew openssl
 brew pcre
 brew peco
