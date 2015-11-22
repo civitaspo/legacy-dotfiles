@@ -22,6 +22,7 @@ cask omniplan
 cask totalspaces
 cask vagrant
 cask virtualbox
+cask visual-studio-code
 
 ## caskroom/fonts
 tap caskroom/fonts
@@ -43,6 +44,7 @@ brew awscli
 brew bdw-gc
 brew boot2docker
 brew cmake
+brew cmigemo
 brew colordiff
 brew curl --with-openssl --with-openssl
 brew docker
@@ -69,6 +71,7 @@ brew maven
 brew mercurial
 brew mysql
 brew nettle
+brew nkf
 brew openssl
 brew pcre
 brew peco
@@ -96,12 +99,12 @@ brew zsh-syntax-highlighting
 appstore Dash
 appstore Display Menu
 appstore Evernote
+appstore FreeMan
 appstore GarageBand
 appstore Growl
 appstore iMovie
 appstore Keynote
 appstore LINE
-appstore Memory Monitor
 appstore Numbers
 appstore Pages
 appstore PopClip
