@@ -6,7 +6,7 @@ set encoding=utf-8
 set nonumber                   " 行番号を非表示
 set showmatch                  " 括弧入力時に対応する括弧を強調する
 syntax on                      " 構文ごとに色分け表示する
-set nowrap                     " ウィンドウ幅で行を折り返さない
+set wrap                       " ウィンドウ幅で行を折り返す
 set autoindent                 " 新しい行のインデントを現在行と同じにする
 "set smartindent                " 新しい行を作ったときに高度な自動インデントを行う
 set smarttab                   " 行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする。

@@ -5,5 +5,5 @@ XHOME=$(dirname $0)
 $XHOME/git-submodule
 $XHOME/homebrew
 $XHOME/symlink
-$HOME/ghq
+$XHOME/ghq
 

@@ -6,3 +6,4 @@
 .atom/.node-gyp
 .atom/.apm
 .atom/.gitignore
+dotfiles-secret/
