@@ -42,6 +42,7 @@ brew ant
 brew autoconf
 brew awscli
 brew bdw-gc
+brew boost
 brew boot2docker
 brew cmake
 brew cmigemo
@@ -69,6 +70,7 @@ brew libtiff
 brew lua
 brew maven
 brew mercurial
+brew mobile-shell
 brew mysql
 brew nettle
 brew nkf
@@ -76,9 +78,11 @@ brew openssl
 brew pcre
 brew peco
 brew pkg-config
+brew protobuf
 brew pstree
 brew readline
 brew reattach-to-user-namespace
+brew redis
 brew s3cmd
 brew socat
 brew the_silver_searcher
