@@ -261,4 +261,9 @@ nnoremap w<Up>    <C-w>k
 nnoremap w<Left>  <C-w>h
 nnoremap w<Right> <C-w>l
 nnoremap ww       <C-w>w
-
+nnoremap <C-f> <Right>
+inoremap <C-f> <Right> 
+nnoremap <C-b> <Left>
+inoremap <C-b> <Left>
+inoremap <C-p> <Up>
+inoremap <C-n> <Down>

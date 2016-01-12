@@ -11,3 +11,4 @@ ln -fs $HOME/dotfiles/.git_template $HOME/
 ln -fs $HOME/dotfiles/.config $HOME/
 ln -fs $HOME/dotfiles/.config/atom/* $HOME/.atom/
 ln -fs $HOME/dotfiles/dotfiles-secret/sbin $HOME/
+ln -fs $HOME/dotfiles/.brewfile $HOME/

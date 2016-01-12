@@ -27,7 +27,7 @@ export LESS='-RQM' # R = そのままの制御文字を出力 + 可能なら表�
                    # Q = 完全に quite
                    # M = 詳細なパーセント表示のプロンプト
 
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/bin:$HOME/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 
 # LANG

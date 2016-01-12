@@ -3,7 +3,6 @@
 
 ## caskroom/cask
 tap caskroom/cask
-brew brew-cask
 cask alfred
 cask apache-directory-studio
 cask atom
@@ -44,6 +43,7 @@ brew awscli
 brew bdw-gc
 brew boost
 brew boot2docker
+brew cctools --with-llvm
 brew cmake
 brew cmigemo
 brew colordiff
@@ -67,6 +67,7 @@ brew libevent
 brew libpng
 brew libtasn1
 brew libtiff
+brew llvm
 brew lua
 brew maven
 brew mercurial
@@ -85,12 +86,13 @@ brew reattach-to-user-namespace
 brew redis
 brew s3cmd
 brew socat
+brew sphinx-doc
 brew the_silver_searcher
 brew tig
 brew tmux
 brew tree
 brew unixodbc
-brew vim --HEAD --with-lua --override-system-vi
+brew vim --with-lua --override-system-vi
 brew w3m
 brew wget
 brew wxmac
@@ -113,7 +115,9 @@ appstore Numbers
 appstore Pages
 appstore PopClip
 appstore Pushbullet
+appstore Reeder
 appstore Slack
 appstore Steve
 appstore Sunrise Calendar
 appstore Tweetbot
+appstore Xcode
