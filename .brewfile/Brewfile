@@ -1,7 +1,9 @@
 
 # tap repositories and their packages
 
-## caskroom/cask
+tap argon/mas
+brew mas
+
 tap caskroom/cask
 cask alfred
 cask apache-directory-studio
@@ -16,54 +18,65 @@ cask iterm2
 cask java
 cask karabiner
 cask kindle
+cask licecap
 cask limechat
-cask omniplan
 cask totalspaces
 cask vagrant
 cask virtualbox
 cask visual-studio-code
 
-## caskroom/fonts
 tap caskroom/fonts
 cask font-hermit
 cask font-ubuntu
 
-## caskroom/versions
 tap caskroom/versions
 cask java7
 
-## rcmdnk/file
-tap rcmdnk/file
-brew brew-file
-
-# Other Homebrew packages
+tap homebrew/core
 brew ant
+brew atk
 brew autoconf
+brew awf
 brew awscli
 brew bdw-gc
+brew bfg
 brew boost
-brew boot2docker
-brew cctools --with-llvm
+brew cairo
+brew cctools
 brew cmake
 brew cmigemo
 brew colordiff
-brew curl --with-openssl --with-openssl
-brew docker
-brew emacs --with-gnutls --with-cocoa
+brew curl
+brew emacs
 brew embulk
+brew fontconfig
 brew fop
+brew freetype
 brew gawk
 brew gdbm
+brew gdk-pixbuf
+brew gettext
 brew ghq
+brew gibo
 brew gist
 brew git
 brew gmp
 brew gnutls
+brew gobject-introspection
+brew gradle
+brew gsettings-desktop-schemas
+brew gtk+
+brew gtk+3
 brew hadoop
+brew harfbuzz
+brew hicolor-icon-theme
 brew htop-osx
+brew icu4c
 brew jpeg
 brew jq
+brew libepoxy
 brew libevent
+brew libffi
 brew libpng
 brew libtasn1
 brew libtiff
@@ -75,9 +88,13 @@ brew mobile-shell
 brew mysql
 brew nettle
 brew nkf
+brew oniguruma
 brew openssl
+brew pango
 brew pcre
 brew peco
+brew phantomjs
+brew pixman
 brew pkg-config
 brew protobuf
 brew pstree
@@ -87,37 +104,49 @@ brew redis
 brew s3cmd
 brew socat
 brew sphinx-doc
-brew the_silver_searcher
+brew sslscan
+brew task
+brew tasksh
 brew tig
 brew tmux
 brew tree
 brew unixodbc
-brew vim --with-lua --override-system-vi
+brew vim
 brew w3m
 brew wget
 brew wxmac
 brew xz
-brew zsh
 brew zsh-completions
 brew zsh-syntax-highlighting
+brew zsh
+
+tap rcmdnk/file
+brew brew-file
+
+# Other Homebrew packages
+brew boot2docker
+brew docker
+brew glib
+brew the_silver_searcher
 
 # App Store applications
-appstore Dash
-appstore Display Menu
-appstore Evernote
-appstore FreeMan
-appstore GarageBand
-appstore Growl
-appstore iMovie
-appstore Keynote
-appstore LINE
-appstore Numbers
-appstore Pages
-appstore PopClip
-appstore Pushbullet
-appstore Reeder
-appstore Slack
-appstore Steve
-appstore Sunrise Calendar
-appstore Tweetbot
-appstore Xcode
+appstore 449589707 Dash
+appstore 549083868 Display Menu
+appstore 406056744 Evernote
+appstore 510934532 FreeMan
+appstore 682658836 GarageBand
+appstore 467939042 Growl
+appstore 409183694 Keynote
+appstore 539883307 LINE
+appstore 409203825 Numbers
+appstore 867299399 OmniFocus
+appstore 1040002810 OmniPlan
+appstore 409201541 Pages
+appstore 445189367 PopClip
+appstore 948415170 Pushbullet
+appstore 880001334 Reeder
+appstore 803453959 Slack
+appstore 431511738 Timing
+appstore 557168941 Tweetbot
+appstore 497799835 Xcode
+appstore 408981434 iMovie

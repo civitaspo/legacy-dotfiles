@@ -49,8 +49,8 @@ setopt prompt_subst
 autoload -Uz colors
 colors
 
-# zsh incremental completion
-source $HOME/.config/zsh/plugins/incr-0.2/incr.zsh
+# zsh incremental completion: so slow...
+# source $HOME/.config/zsh/plugins/incr-0.2/incr.zsh
 
 # zsh vcs info more
 source $HOME/.config/zsh/plugins/zsh-vcs-prompt/zshrc.sh
@@ -120,6 +120,10 @@ source $HOME/.config/peco/plugins/cool-peco/cool-peco
 zle -N cool-peco-ssh
 bindkey '^s' cool-peco-ssh
 
+### google-cloud-sdk
+[[ -s "/opt/google-cloud-sdk/current/path.zsh.inc" ]] && source /opt/google-cloud-sdk/current/path.zsh.inc
+[[ -s "/opt/google-cloud-sdk/current/completion.zsh.inc" ]] && source /opt/google-cloud-sdk/current/completion.zsh.inc
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "$HOME/.gvm/bin/gvm-init.sh" ]] && source "$HOME/.gvm/bin/gvm-init.sh"
+

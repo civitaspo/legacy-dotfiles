@@ -1,0 +1,45 @@
+#!/bin/bash -eux
+
+version="100.0.0"
+pkg_name="google-cloud-sdk-${version}-linux-x86_64"
+libroot="/opt/google-cloud-sdk"
+
+if [ $(whoami) != "root" ]; then
+  echo "only 'root' user can execute this."
+  exit 1
+fi
+
+# download & put
+(
+  if ! test -x ${libroot}/${pkg_name}; then
+    working_dir="/tmp/${pkg_name}"
+    download_file="${pkg_name}.tar.gz"
+    mkdir -p /opt/google-cloud-sdk
+    cd /tmp
+    mkdir -p $working_dir
+    curl -L -s "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/${download_file}" -o "${download_file}"
+    tar zxvf ${download_file} -C ${working_dir}
+    mv ${working_dir}/google-cloud-sdk ${libroot}/${pkg_name}
+  fi
+)
+
+# link current
+(
+  cd $libroot
+  ln -fs $pkg_name current
+)
+
+## set profile
+#(
+#  cat << EOS > /etc/profile.d/google-cloud-sdk.sh
+## The next line updates PATH for the Google Cloud SDK.
+#source '/opt/google-cloud-sdk/current/path.bash.inc'
+## The next line enables shell command completion for gcloud.
+#source '/opt/google-cloud-sdk/current/completion.bash.inc'
+#EOS
+#)
+
+(
+  ln -s /opt/google-cloud-sdk/current/path.zsh.inc /usr/local/share/zsh-completions/_google-cloud-sdk.path.bash.inc
+  ln -s /opt/google-cloud-sdk/current/completion.zsh.inc /usr/local/share/zsh-completions/_google-cloud-sdk.completion.bash.inc
+)

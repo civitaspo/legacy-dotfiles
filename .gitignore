@@ -7,3 +7,5 @@
 .atom/.apm
 .atom/.gitignore
 dotfiles-secret/
+.config/gcloud
+.emacs.d
