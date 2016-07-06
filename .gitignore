@@ -9,3 +9,4 @@
 dotfiles-secret/
 .config/gcloud
 .emacs.d
+bin

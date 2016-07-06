@@ -34,6 +34,7 @@ au BufNewFile,BufRead *.erb    set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.pl     set tabstop=4 shiftwidth=4 expandtab
 au BufNewFile,BufRead *.pm     set tabstop=4 shiftwidth=4 expandtab
 au BufNewFile,BufRead *.t      set tabstop=4 shiftwidth=4 expandtab
+au BufNewFile,BufRead *.go     set tabstop=4 shiftwidth=4 expandtab
 au BufNewFile,BufRead *.psgi   set tabstop=4 shiftwidth=4 expandtab
 au BufNewFile,BufRead *.sh     set tabstop=2 shiftwidth=2 expandtab
 
@@ -66,6 +67,7 @@ set lazyredraw
 " 高速ターミナル接続を行う
 set ttyfast
 " with neobundle
+set background=dark
 colorscheme hybrid
 
 "-------------------------------------------------------------------------------
@@ -117,7 +119,7 @@ let g:neocomplete#skip_auto_completion_time = '0.8'
 
 NeoBundle 'Shougo/unite-outline'
 let g:unite_split_rule = 'botright'
-noremap <C-\> :<C-u>Unite -vertical -winwidth=40 outline<CR>
+noremap <C-]> :<C-u>Unite -vertical -winwidth=40 outline<CR>
 
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
@@ -162,6 +164,11 @@ NeoBundle 'othree/html5.vim'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'christoomey/vim-tmux-navigator'
+
+NeoBundleLazy 'fatih/vim-go', {
+    \ 'autoload' : { 'filetypes' : 'go'  }
+    \ }
 
 call neobundle#end()
 
@@ -248,22 +255,32 @@ let g:markdown_fenced_languages = [
 """"""""""""""""""""""""""""
 " key bindings
 """"""""""""""""""""""""""""
-noremap <C-c> :q<CR>
-noremap <C-x> :wq<CR>
+nmap <C-c> :q<CR>
+nmap <C-x> :wq<CR>
 " noremap <C-w> :w<CR>
-nnoremap w <Nop>
-nnoremap <C-w><Down> <C-w>j
-nnoremap <C-w><Up>   <C-w>k
-nnoremap <C-w><Left> <C-w>h
+nnoremap w            <Nop>
+nnoremap <C-w><Down>  <C-w>j
+nnoremap <C-w><Up>    <C-w>k
+nnoremap <C-w><Left>  <C-w>h
 nnoremap <C-w><Right> <C-w>l
-nnoremap w<Down>  <C-w>j
-nnoremap w<Up>    <C-w>k
-nnoremap w<Left>  <C-w>h
-nnoremap w<Right> <C-w>l
-nnoremap ww       <C-w>w
-nnoremap <C-f> <Right>
-inoremap <C-f> <Right> 
-nnoremap <C-b> <Left>
-inoremap <C-b> <Left>
-inoremap <C-p> <Up>
-inoremap <C-n> <Down>
+nnoremap <C-w><C-n>   <C-w>j
+nnoremap <C-w><C-p>   <C-w>k
+nnoremap <C-w><C-b>   <C-w>h
+nnoremap <C-w><C-f>   <C-w>l
+nnoremap w<Down>      <C-w>j
+nnoremap w<Up>        <C-w>k
+nnoremap w<Left>      <C-w>h
+nnoremap w<Right>     <C-w>l
+nnoremap ww           <C-w>w
+nnoremap <C-f>        <Right>
+nmap     <C-f>        <Right>
+inoremap <C-f>        <Right> 
+imap     <C-f>        <Right>
+nnoremap <C-b>        <Left>
+inoremap <C-b>        <Left>
+inoremap <C-p>        <Up>
+inoremap <C-n>        <Down>
+inoremap <C-a>        <Home>
+nnoremap <C-a>        <Home>
+inoremap <C-e>        <End>
+nnoremap <C-e>        <End>

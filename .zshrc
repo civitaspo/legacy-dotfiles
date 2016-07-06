@@ -12,7 +12,9 @@ alias gco='git checkout'
 alias gb='git branch'
 alias diff='colordiff'
 alias tmux='tmux -u'
-alias emacs="TERM=xterm-256color /usr/local/bin/emacs"
+alias emacs-server='/usr/local/bin/emacs --daemon'
+alias emacs-server-kill="/usr/local/bin/emacsclient -e '(kill-emacs)'"
+alias emacs="TERM=xterm-256color /usr/local/bin/emacsclient -t"
 alias -g B='`git branch -a | peco --prompt "GIT BRANCH>" | head -n1 | sed -e "s/^\*\s*//g"`'
 alias -g R='`git remote | peco --prompt "GIT REMOTE>" | head -n1`'
 alias push='git push R B'
@@ -27,8 +29,14 @@ export LESS='-RQM' # R = そのままの制御文字を出力 + 可能なら表�
                    # Q = 完全に quite
                    # M = 詳細なパーセント表示のプロンプト
 
-export PATH=$HOME/bin:$HOME/sbin:$PATH
+export PATH=.:$HOME/bin:$HOME/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+if which ghg 2>/dev/null 1>&2; then
+  export PATH=$(ghg bin):$PATH
+fi
+
+export GOPATH=$HOME
 
 # LANG
 export LANG=ja_JP.UTF-8
