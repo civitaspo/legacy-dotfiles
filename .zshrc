@@ -35,6 +35,7 @@ export PATH=/usr/local/sbin:$PATH
 if which ghg 2>/dev/null 1>&2; then
   export PATH=$(ghg bin):$PATH
 fi
+export PATH=$HOME/opt/gae/go_appengine:$PATH
 
 export GOPATH=$HOME
 

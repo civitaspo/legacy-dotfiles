@@ -1,0 +1,32 @@
+#!/bin/bash -eux
+
+version="1.9.38"
+app_name="go_appengine"
+pkg_name="${app_name}_sdk_darwin_amd64-${version}"
+libroot="$HOME/opt/gae"
+
+# if [ $(whoami) != "root" ]; then
+#   echo "only 'root' user can execute this."
+#   exit 1
+# fi
+
+# download & put
+(
+  if ! test -x ${libroot}/${pkg_name}; then
+    working_dir="/tmp/${pkg_name}"
+    download_file="${pkg_name}.zip"
+    mkdir -p ${libroot}
+    cd /tmp
+    mkdir -p $working_dir
+    curl -L -s "https://storage.googleapis.com/appengine-sdks/featured/${download_file}" -o "${download_file}"
+    tar zxvf ${download_file} -C ${working_dir}
+    mv ${working_dir}/$app_name ${libroot}/${pkg_name}
+  fi
+)
+
+# link current
+(
+  cd $libroot
+  ln -fs $pkg_name current
+)
+
